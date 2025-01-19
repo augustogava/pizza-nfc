@@ -1,5 +1,4 @@
-import { LoginForm } from '@/components/LoginForm'
-import { getSession } from '@/app/actions/auth'
+import {LoginForm} from "../components/LoginForm.tsx";
 
 export default function LoginPage() {
   return (

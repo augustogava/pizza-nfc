@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { generateNotificationUrl } from '@/app/actions/generateNotificationUrl'
+import {generateNotificationUrl} from "../app/actions/generateNotificationUrl";
 
 export function useNotificationQRCode() {
   const [isGenerating, setIsGenerating] = useState(false)
