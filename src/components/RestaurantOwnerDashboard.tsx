@@ -53,14 +53,6 @@ export function RestaurantOwnerDashboard() {
         const ordersData = await ordersResponse.json()
         const usersData = await usersResponse.json()
 
-        if (!Array.isArray(ordersData)) {
-          throw new Error('Invalid orders data received')
-        }
-
-        if (!Array.isArray(usersData)) {
-          throw new Error('Invalid users data received')
-        }
-
         setOrders(ordersData)
         setUsers(usersData)
       } catch (err) {

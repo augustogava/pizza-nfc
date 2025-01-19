@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation'
 import { getSession } from '@/app/actions/auth'
-import { RestaurantOwnerDashboard } from '@/components/RestaurantOwnerDashboard'
-import { LogoutButton } from '@/components/LogoutButton'
+import { RestaurantOwnerDashboard } from '@/app/components/RestaurantOwnerDashboard'
+import { LogoutButton } from '@/app/components/LogoutButton'
 
 export default async function DashboardPage() {
   const session = await getSession()

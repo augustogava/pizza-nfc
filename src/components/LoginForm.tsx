@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { login } from '@/app/actions/auth'
+import { login } from '@/app/api/auth' // Updated import statement
 
 export function LoginForm() {
   const [username, setUsername] = useState('')

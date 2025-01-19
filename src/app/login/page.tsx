@@ -1,4 +1,5 @@
 import { LoginForm } from '@/components/LoginForm'
+import { getSession } from '@/app/actions/auth'
 
 export default function LoginPage() {
   return (

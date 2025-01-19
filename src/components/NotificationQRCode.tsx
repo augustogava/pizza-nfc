@@ -106,7 +106,13 @@ export function NotificationQRCode({ orderId, storeNumber }: NotificationQRCodeP
         </div>
       )}
 
-      {processingError && <p className="text-red-500" role="alert">{processingError}</p>}
+      {processingError && (
+        <div className="text-red-500 p-4 border border-red-300 rounded" role="alert">
+          <p className="font-bold">Error processing QR code:</p>
+          <p>{processingError}</p>
+          <p className="mt-2">Please try again or contact support if the problem persists.</p>
+        </div>
+      )}
 
       {isNewUser && detectedCellNumber && (
         <div className="p-4 border rounded">
